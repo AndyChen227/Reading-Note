@@ -3,3 +3,12 @@ What is RNN?
 It's called a recurrent neural network
 It can deal with different amounts of input values.
 Feedback loops
+
+Three kinds of frames
+1): Encoder-only: Two-way attention mechanism, good for natural Language Understanding (Let the computer think like a human)
+2): Decoder-only: Delete the encoder portion in the Encoder_decoder parts, decrease the calculating complexity of the model,
+                  It's good for an unconditional text generation task
+3): Encoder-Decode: Add a decoder to the basic frame, good for generating tasks with conditions.
+
+Frame of Encoder-only
+It's Bidirectional Encoder Model (comprehensive attention mechanism)
