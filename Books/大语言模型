@@ -12,3 +12,22 @@ Three kinds of frames
 
 Frame of Encoder-only
 It's Bidirectional Encoder Model (comprehensive attention mechanism)
+
+2/10/2026
+Prompt engineering
+Prompt is the instruction, question, or input you give to an AI
+A prompt is always composed of four parts
+  1) Task description
+  2) Context
+    1) Zero-shot
+    2) One-shot
+    3) Few-shot
+
+
+    如何选择演示实例？
+    1) 直接检索：直接根据评分高的进行选择，多样性欠佳
+    2) 聚类检索： 先分类，再找每个group中评分最高的，相似性欠佳
+    3) 迭代检索： 先选择一个最相似的实例，然后结合问题和当前的实例，动态选择下一个实例，然后一直迭代，直到选到足够的实例
+
+  3) Question
+  4) Output format
