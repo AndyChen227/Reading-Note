@@ -29,5 +29,13 @@ A prompt is always composed of four parts
     2) 聚类检索： 先分类，再找每个group中评分最高的，相似性欠佳
     3) 迭代检索： 先选择一个最相似的实例，然后结合问题和当前的实例，动态选择下一个实例，然后一直迭代，直到选到足够的实例
 
-  3) Question
-  4) Output format
+    Pre-training data's influence
+    1) Domain richness: how much data this pre-training dataset includes.
+    2) Diversity of assignments: More types of assignments help the model to learn broader knowledge and skills
+    3) The distribution of the dataset: If the dataset includes rare types and a sudden distribution, it can help to improve the context
+        ability of the model.
+
+  3) Chain-of-Thought： Using carefully crafted prompt triggers a large language model to generate a reasoning path step by step （模拟人类思考过程）
+        1) 按部就班：一步一步的进行推理，形成一条逻辑连贯的链条
+        2) 三思后行：每一步都停下来检查当前的情况，在几条推理方向中选一个最合适的前进
+        3) 集思广益： 生成多条推理路径得到多个结果，整合和这些结果得到一个更加全面和准确的答案
